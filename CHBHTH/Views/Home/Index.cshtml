@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "9XStore";
+
+    Layout = "~/Views/Shared/_LayoutClient2.cshtml";
+}
+@using CHBHTH.Models;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        header {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+    <br />
+    <header class="">
+        <center>
+            <div class="row">
+                <div class="col-md-16">
+                    <img src="~/Images/bn.jpg" width="90%"/>
+                </div>
+            </div>
+        </center>
+    </header>
+    <br />
+    <div class="spnoibat">
+        <center>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="~/Images/hi1.jpg" class="img-responsive" alt="" width="76%" />
+                </div>
+                <div class="col-md-4">
+                    <img src="~/Images/hi2.jpg" class="img-responsive" alt="" width="80%" />
+                </div>
+                <div class="col-md-4">
+                    <img src="~/Images/hi3.jpg" class="img-responsive" alt="" width="75%" />
+                </div>
+            </div>
+        </center>
+    </div>
+    <br />
+
+    @Html.Action("suapartial", "sanpham")
+
+    @Html.Action("dauanpartial", "sanpham")
+
+    @Html.Action("raupartial", "sanpham")
+
+
